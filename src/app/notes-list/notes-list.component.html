@@ -1,0 +1,7 @@
+<div class="notes-list">
+  <button (click)="router.navigate(['new'])">Добавить заметку</button>
+  <div *ngFor="let note of noteList">
+    <span [routerLink]="[note.id]" routerLinkActive="active-list-element">{{note.title}}</span>
+  </div>
+</div>
+

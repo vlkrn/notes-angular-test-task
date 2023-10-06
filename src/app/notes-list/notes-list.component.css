@@ -1,0 +1,17 @@
+.notes-list {
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+}
+
+.notes-list * {
+    margin: 1%;
+}
+
+.notes-list span {
+    cursor: pointer;
+}
+
+.active-list-element {
+    border-bottom: 1px dashed black;
+}

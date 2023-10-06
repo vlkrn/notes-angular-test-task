@@ -1,0 +1,17 @@
+.new-note {
+    display: flex;
+    flex-direction: column
+}
+.new-note * {
+    margin: 1%;
+}
+
+.new-note textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.note-info {
+    display: block;
+    margin: 1%;
+}

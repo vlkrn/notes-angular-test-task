@@ -1,0 +1,12 @@
+<div>
+  <div *ngIf="!note; else noteInfo" [formGroup]="formGroup" class="new-note">
+    <label for="note-title">Заголовок</label>
+    <input type="text" id="note-title" formControlName="title">
+    <label for="note-text">Текст</label>
+    <textarea id="note-text" formControlName="text"></textarea>
+    <button type="button" (click)="saveNote()" [disabled]="formGroup.invalid">Сохранить</button>
+  </div>
+  <ng-template #noteInfo>
+    <span class="note-info">{{note.text}}</span>
+  </ng-template>
+</div>
